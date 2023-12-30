@@ -7,12 +7,15 @@ public class CloudController : MonoBehaviour
     public float minSize = 0.1f;  // 最小尺寸，小于该尺寸时云朵消失
 
     private float initialScale; // 初始缩放比例
-
+    private float initialScalex;
+    private float initialScaley;
     private void Start()
     {
 
         // 保存初始缩放比例（取 x 和 y 中较小的一个）
         initialScale = Mathf.Min(transform.localScale.x, transform.localScale.y);
+        initialScalex = transform.localScale.x;
+        initialScaley = transform.localScale.y;
     }
 
     private void Update()
@@ -63,7 +66,11 @@ public class CloudController : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    public void RestoreCloudSize()
+    {
+        // 恢复云的大小为初始大小
+        transform.localScale = new Vector3(initialScalex, initialScaley, 1f);
+    }
     private void FlipCloud(bool isFacingLeft)
     {
         // 根据方向翻转云朵
