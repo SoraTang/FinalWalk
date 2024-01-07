@@ -7,6 +7,7 @@ TagManager:
   - Wall
   - Cloud
   - RePoint
+  - Brick
   layers:
   - Default
   - TransparentFX

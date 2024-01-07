@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  shrinkSpeed: 0.1
+  shrinkSpeed: 0.12
   minSize: 0.1
 --- !u!114 &2033175093696964942
 MonoBehaviour:
@@ -468,7 +468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  shrinkSpeed: 0.1
+  shrinkSpeed: 0.08
   minSize: 0.1
 --- !u!1 &7719776813021229457
 GameObject:
