@@ -15,6 +15,7 @@ public class RecoveryPoint : MonoBehaviour
             {
                 // 销毁恢复点
                 Destroy(gameObject, explosionDuration);
+                AudioManager.instance.PlayCollisionSound(2);
                 // 显示爆炸效果
                 ShowExplosionEffect();
 

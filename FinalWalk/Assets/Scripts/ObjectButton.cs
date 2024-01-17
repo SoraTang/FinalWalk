@@ -15,6 +15,7 @@ public class ObjectButton : MonoBehaviour
         if (other.CompareTag("Cloud") && !isMoving)
         {
             // 触发移动效果
+            AudioManager.instance.PlayCollisionSound(1);
             MoveObject();
         }
     }
