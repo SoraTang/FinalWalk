@@ -14,7 +14,7 @@ public class StartScreen : MonoBehaviour
         }
 
         // 如果键被按下，并且已经过了3秒
-        if (keyPressed && Time.timeSinceLevelLoad > 8f)
+        if (keyPressed && Time.timeSinceLevelLoad > 6f)
         {
             // 切换到第一个场景（假设第一个场景的 Build Index 为 1）
             SceneManager.LoadScene(1);
